@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Assignment 7</title>
+</head>
+<body>
+    <h3>
+        Write a js program to toggle case of each character of a string.
+    </h3>
+    <input type="text" id="char" placeholder="Enter String">
+    <br><br><br>
+    <button onchroclick="myfunction()">Check</button>
+    <script>
+        
+        function myfunction(){
+        var string=document.getElementById('char').value
+        string = string.toToggleCase()
+        document.write("The Toggled String is : " + string)
+        }
+        
+    </script>
+</body>
+</html>

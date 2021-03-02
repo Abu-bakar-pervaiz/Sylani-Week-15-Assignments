@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Assignment 10</title>
+</head>
+
+<body>
+    <h3>
+        Write a js program to count total number of words in a string.
+    </h3>
+    <input type="text" id="char" placeholder="Enter String">
+    <br><br><br>
+    <button onclick="myfunction()">Check</button>
+    <script>
+
+        function myfunction() {
+            var char = document.getElementById('char').value
+            var words = 0
+            for (let i = 0; i < char.length; i++) {
+                
+                if(char[i]==' '){
+                    words++
+                }
+
+            }
+        document.write("<h3>You have Entered " + (++words) + " Words</h3> <br><br>")
+        }
+
+    </script>
+</body>
+
+</html>

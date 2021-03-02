@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7</title>
+</head>
+<body>
+    <h3>
+        Write a js program to check whether a character is alphabet or not.
+    </h3>
+    <input type="text" id="char" placeholder="Enter Character">
+    <button onclick="myfunction()">Check</button>
+    <script>
+
+        function myfunction(){
+        char=document.getElementById('char').value
+        if ( char>='a' && char <='z') {
+            document.write("It Is a Character")
+        }
+        else {
+            document.write("It Is Not Character")
+        }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+</head>
+<body>
+    <h3>
+        Write a js program to check whether a year is leap year or not.
+    </h3>
+    <input type="number" id="num" placeholder="Enter Year">
+    <button onclick="myfunction()">Check</button>
+    <script>
+
+        function myfunction(){
+        num=document.getElementById('num').value
+        if ( num%4==0) {
+            document.write("It Is Leap Year")
+        }
+        else {
+            document.write("It Is Not Leap Year")
+        }
+        }
+    </script>
+</body>
+</html>

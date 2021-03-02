@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Assignment 8</title>
+</head>
+<body>
+    <h3>
+        Write a js program to find total number of alphabets, digits or special character in a string.
+    </h3>
+    <input type="text" id="char" placeholder="Enter String">
+    <br><br><br>
+    <button onclick="myfunction()">Check</button>
+    <script>
+        
+        function myfunction(){
+        var string =[]    
+        string=document.getElementById('char').value
+        var nums=chars=specialCharacters=0
+        string.split('').forEach(element => {
+        
+        if ( element==' ') {
+           return
+        }
+        else if( element>='0' && element <='9' ){
+            nums++
+        }
+        else if( element>='a' && element <='z' || element>='A' && element <='Z' ){
+            chars++ 
+        }
+        else {
+            specialCharacters++
+        }
+        });
+        document.write("<h3>You have Entered " + chars + " Characters</h3> <br><br>")
+        document.write("<h3>You have Entered " + nums + " Digits</h3> <br><br>")
+        document.write("<h3>You have Entered " + specialCharacters + " Special Characters</h3> <br><br>")
+        }
+        
+    </script>
+</body>
+</html>

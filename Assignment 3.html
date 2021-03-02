@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+</head>
+<body>
+    <h5>
+        Write a js program to check whether a number is negative, positive or zero.
+    </h5>
+    <input type="number" id="num" placeholder="Enter Your Number">
+    <button onclick="myfunction()">Check</button>
+    <script>
+
+        function myfunction(){
+        num=document.getElementById('num').value
+        if (num>0) {
+            document.write("The Number Is Positive")
+        }
+        else if(num<0){
+            document.write("The Number Is Negative")
+        } 
+        else {
+            document.write("The Number Is Zero")
+        }
+        }
+    </script>
+</body>
+</html>

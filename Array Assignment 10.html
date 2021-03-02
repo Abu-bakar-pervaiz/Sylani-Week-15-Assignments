@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Assignment 10</title>
+</head>
+<body>
+    <h1>
+        Write a js program to delete an element from an array at specified position.
+    </h1>
+    <br><br><br><br>
+    <h4>The Array is [3,1,6,-8,35,-33,9,10]</h4>
+    <input type="text" id="text" placeholder="Enter Element You want To Delete">
+    <button onclick="myfunction()">Add</button>
+    <script>
+        function myfunction(){
+        var deletingValue=document.getElementById('text').value
+        var array =[3,1,6,-8,35,-33,9,10]
+
+        console.log(deletingValue)
+        document.writeln("<h1>Array Before Deletion is </h1>")
+        document.writeln(array)
+        array.forEach((element,index) => {
+            if (element==deletingValue) {
+                array.splice(index,1)
+            }
+        });
+        document.writeln("<h1>Array After Deletion is </h1>")
+        document.writeln(array)
+        }
+    </script>
+</body>
+
+</html>

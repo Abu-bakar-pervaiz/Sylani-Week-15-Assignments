@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Assignment 2</title>
+</head>
+<body>
+    <h3>
+        Write a js program to copy one string to another string.
+    </h3>
+    <input type="text" id="char" placeholder="Enter String">
+    <button onclick="myfunction()">Check</button>
+    <script>
+
+        function myfunction(){
+        var char=document.getElementById('char').value
+        var string2=char.slice()
+        // string2=char
+        document.write("Copied String is " + string2)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Methods Assignment 2</title>
+</head>
+<body>
+    <h1>
+        Write a js program to ceil the number without using math.ceil method!
+    </h1>
+    <input type="text" id="text" placeholder="Enter Number">
+    <button onclick="myfunction()">Add</button>
+    <script>
+        function myfunction(){
+        var number=document.getElementById('text').value
+        var ceilNumber=number.split('.')[0]
+        var decimalNumber=number.split(".")[1]
+        decimalNumber=parseInt(decimalNumber)
+        ceilNumber=parseInt(ceilNumber)
+        // Proper And Bug Free Method
+        if (decimalNumber>0) {
+            ceilNumber++
+        }
+        document.writeln("Your Ceiled Number is : " ,ceilNumber)
+
+    }
+    </script>
+</body>
+
+</html>

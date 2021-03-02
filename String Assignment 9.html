@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Assignment 9</title>
+</head>
+
+<body>
+    <h3>
+        Write a js program to count total number of vowels and consonants in a string.
+    </h3>
+    <input type="text" id="char" placeholder="Enter String">
+    <br><br><br>
+    <button onclick="myfunction()">Check</button>
+    <script>
+
+        function myfunction() {
+            var char = document.getElementById('char').value
+            var consonants = vowels = 0
+            for (let i = 0; i < char.length; i++) {
+                if (char[i] == 'a' || char[i] == 'e' || char[i] == 'i' || char[i] == 'o' || char[i] == 'u') {
+                    vowels++
+                }
+                else if(char[i]==' '){
+                    continue
+                }
+                else {
+                    consonants++
+                }
+
+            }
+        document.write("<h3>You have Entered " + vowels + " Vowels</h3> <br><br>")
+        document.write("<h3>You have Entered " + consonants + " Consonants</h3> <br><br>")
+        }
+
+    </script>
+</body>
+
+</html>

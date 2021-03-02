@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Assignment 15</title>
+</head>
+<body>
+    <h3>
+        Write a js program to find last occurrence of a character in a given string.
+    </h3>
+    <input type="text" id="string" placeholder="Enter String">
+    <br><br><br>
+    <input type="text" id="char" placeholder="Enter Character to Find">
+    <br><br><br>
+    <button onclick="myfunction()">Check</button>
+    <script>
+
+        function myfunction() {
+            var string = document.getElementById('string').value
+            var char = document.getElementById('char').value
+            document.write("You Character Is Located at "+ (string.lastIndexOf(char.toLowerCase())+1) +" number")
+        }
+
+    </script>
+</body>
+
+</html>

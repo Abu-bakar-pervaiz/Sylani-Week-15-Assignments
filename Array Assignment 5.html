@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Assignment 5</title>
+</head>
+<body>
+    <h1>
+        Write a js program to find second largest element in an array.
+    </h1>
+    <br><br><br><br>
+    <h3>
+        The Second Maximum Element of the Array is Given Below
+    </h3>
+    <script>
+        var array =[3,1,6,-8,3.5,-3.3,9,10]
+        var max=secondMax=array[0]
+        array.forEach(element=>{
+            if (element>max) {
+                secondMax=max
+                max=element
+            }
+        })
+        document.writeln("<h1> " + secondMax +" is the Second Maximum in the Array</h1>")
+    </script>
+</body>
+
+</html>

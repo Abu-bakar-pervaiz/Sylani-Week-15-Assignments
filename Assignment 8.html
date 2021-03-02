@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8</title>
+</head>
+<body>
+    <h3>
+       Write a js program to input any alphabet and check whether it is vowel or consonant.   
+    </h3>
+    <input type="text" id="char" placeholder="Enter Character">
+    <button onclick="myfunction()">Check</button>
+    <script>
+
+        function myfunction(){
+         var char=document.getElementById('char').value
+        if ( char=='a' || char =='e'|| char =='i'|| char =='o'|| char =='u') {
+            document.write("It Is a Vowel")
+        }
+        else {
+            document.write("It Is a Consonant")
+        }
+        }
+    </script>
+</body>
+</html>

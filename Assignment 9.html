@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 9</title>
+</head>
+<body>
+    <h3>
+        Write a js program to input any character and check whether it is alphabet, digit or special character.
+    </h3>
+    <input type="text" id="char" placeholder="Enter Character">
+    <button onclick="myfunction()">Check</button>
+    <script>
+
+        function myfunction(){
+        var char=document.getElementById('char').value
+        if ( char>='a' && char <='z' ) {
+            document.write("It Is a Character")
+        }
+        else if( char>=0 && char <=9 ){
+            document.write("It Is a Digit")
+        }
+        else {
+            document.write("It Is a Special Symbol")
+        }
+        }
+    </script>
+</body>
+</html>

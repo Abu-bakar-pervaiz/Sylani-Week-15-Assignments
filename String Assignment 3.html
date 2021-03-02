@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Assignment 3</title>
+</head>
+<body>
+    <h3>
+        Write a js program to concatenate two strings.
+    </h3>
+    <input type="text" id="char" placeholder="Enter First String">
+    <br><br><br>
+    <input type="text" id="char2" placeholder="Enter Second String">
+    <br><br><br>
+    <button onclick="myfunction()">Check</button>
+    <script>
+
+        function myfunction(){
+        var string1=document.getElementById('char').value
+        var string2=document.getElementById('char2').value
+        var string3=string1+string2
+        document.write("Contcated String is  " + string3)
+        }
+    </script>
+</body>
+</html>

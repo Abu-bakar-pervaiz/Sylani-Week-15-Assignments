@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Methods Assignment 1</title>
+</head>
+<body>
+    <h1>
+        Write a js program to round the number, without using the math.round method! 
+    </h1>
+    <input type="text" id="text" placeholder="Enter Number">
+    <button onclick="myfunction()">Add</button>
+    <script>
+        function myfunction(){
+        var number=document.getElementById('text').value
+        var roundNumber=number.split('.')[0]
+        var decimalNumber=number.split(".")[1]
+        decimalNumber=parseInt(decimalNumber)
+        // Simple But Bug Consisting Method
+        //if (decimalNumber[0]>=5) {
+        //     roundNumber++
+        // }
+        roundNumber=parseInt(roundNumber)
+        // Proper And Bug Free Method
+        for (let i = 0; decimalNumber>10; i++) {
+
+           if (decimalNumber%10>=5) {
+            decimalNumber =parseInt( (decimalNumber/10)+1 )
+            console.log(decimalNumber)
+           }
+           else{
+            decimalNumber =parseInt(decimalNumber/10)
+            console.log(decimalNumber)
+           }
+        }
+        if (decimalNumber>=5&&roundNumber>=0) {
+            roundNumber++
+        }
+        document.writeln("Your Rounded Number is : " ,roundNumber)
+
+    }
+    </script>
+</body>
+
+</html>
